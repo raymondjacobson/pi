@@ -37,7 +37,7 @@ a:visited {
 	background-color:#ffffff;
 	z-index:100;
 }
-#logo {
+.header-main-wrapper{
 	text-align: center;
 	margin: 10px 0;
 }
@@ -187,7 +187,7 @@ a:visited {
 /* Tablet */
 @media screen and (max-width: 1024px) {
 
-#logo {
+.header-main-wrapper {
 	width: 100%;
 	text-align: center;
 }
@@ -261,7 +261,7 @@ a:visited {
 /* Mobile */
 @media screen and (max-width: 480px) {
 
-#logo {
+.header-main-wrapper {
 	width: 100%;
 	text-align: center;
 }
