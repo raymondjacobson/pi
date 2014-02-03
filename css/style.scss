@@ -1,4 +1,14 @@
+/*vendor dependenciees */
 @import "bourbon";
 @import "normalize";
+
+/* Authored Dependencies */
+@import "variables";
+
+/*structure*/
 @import "grid";
 @import "main";
+
+
+/*customized*/
+@import "button";
