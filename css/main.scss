@@ -106,15 +106,25 @@ a:visited {
 /* Slide 2 */ 
 
 #slide2{
-	background-image:url('../images/footprints.png');
-	background-color:#f68f67;
-	color:#ffffff;
+	background-color: red;
+	background:
+		url('../img/glassesheart-708.jpg') no-repeat
+	;
+	min-height: 500px;
+	-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	color:$color1!important;
+	
+
 }
 #slide2 h1 {
+	
 	font-size: 3.8em;
 	letter-spacing: -3px;
 	line-height: 0px;
-	color:#ffffff;
+	color:red;
 	font-weight: 700;
 }
 #slide2 h2 {
