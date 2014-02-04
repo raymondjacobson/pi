@@ -544,43 +544,6 @@ a:visited {
   color: #f68f67;
   text-decoration: none; }
 
-/* Navigation */
-.menu {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  height: auto;
-  background-color: #ffffff;
-  z-index: 100; }
-
-.header-main-wrapper {
-  text-align: center;
-  margin: 10px 0; }
-
-#nav {
-  text-align: right;
-  margin: 30px 0 0 0;
-  font-size: .8em; }
-
-.navigation {
-  float: right;
-  list-style: none;
-  margin: 0; }
-
-.navigation li {
-  float: left;
-  padding: 0 0 0 50px;
-  width: auto; }
-
-.navigation li:hover {
-  cursor: pointer;
-  color: #a9d3d0; }
-
-.navigation .active {
-  cursor: pointer;
-  color: #f68f67;
-  font-weight: bold; }
-
 /* General Slides */
 .slide {
   background-attachment: fixed;
@@ -590,25 +553,6 @@ a:visited {
   padding: 140px 0; }
 
 /* Slide 1 */
-#slide1 {
-  background-color: #ffffff;
-  padding-bottom: 0;
-  padding-top: 40px; }
-
-#slide1 h1 {
-  font-size: 3.8em;
-  letter-spacing: -3px;
-  line-height: 0px;
-  color: #8a8683;
-  font-weight: 700; }
-
-#slide1 h2 {
-  font-size: 2em;
-  color: #8a8683;
-  line-height: 0px;
-  padding-bottom: 20px;
-  font-weight: 400; }
-
 /* Slide 2 */
 /* Slide 3 */
 #slide3 {
@@ -662,23 +606,6 @@ a:visited {
     width: 100%;
     text-align: center; }
 
-  #nav {
-    width: 100%;
-    text-align: center;
-    margin: 10px 0; }
-
-  .navigation {
-    width: 100%;
-    float: center;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-
-  .navigation li {
-    float: left;
-    background: red;
-    padding: 0; }
-
   .slide {
     background-attachment: fixed;
     width: 100%;
@@ -722,23 +649,6 @@ a:visited {
     width: 100%;
     text-align: center; }
 
-  #nav {
-    width: 100%;
-    margin: 5px 0;
-    text-align: center; }
-
-  .navigation {
-    width: 70%;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0; }
-
-  .navigation li {
-    float: left;
-    width: auto;
-    padding: 6px 10px 0 0; }
-
   .slide {
     background-attachment: fixed;
     width: 100%;
@@ -768,6 +678,63 @@ a:visited {
   #slide4 h2 {
     line-height: 1em; } }
 /*customized*/
+/* Navigation */
+.menu {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  z-index: 100; }
+
+.header-main-wrapper {
+  text-align: center;
+  margin: 10px 0; }
+
+#nav {
+  font-size: .8em;
+  width: 100%;
+  margin: 5px 0;
+  text-align: center; }
+
+.navigation {
+  list-style: none;
+  width: 70%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    .navigation {
+      float: right;
+      width: auto; } }
+
+.navigation li {
+  float: left;
+  width: auto;
+  padding: 6px 10px 0 0;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    .navigation li {
+      float: right; } }
+
+.navigation li:hover {
+  cursor: pointer;
+  color: #ed1e2f; }
+
+.navigation .active {
+  cursor: pointer;
+  color: #d31f26; }
+
+.nav-logo {
+  height: 100px;
+  float: left;
+  /* Smartphones, except large phone landscape ----------- */ }
+  @media only screen and (max-width: 707px) {
+    .nav-logo {
+      display: none; } }
+
 .header-main-wrapper {
   text-align: center; }
 
@@ -775,8 +742,35 @@ a:visited {
   display: inline-block;
   width: auto; }
 
-.header-main img {
-  float: left; }
+.body-logo {
+  text-align: center;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    .body-logo {
+      display: none; } }
+
+#slide1 {
+  background-color: #ffffff;
+  padding-bottom: 0;
+  padding-top: 40px;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    #slide1 {
+      padding-top: 120px; } }
+
+#slide1 h1 {
+  font-size: 3.8em;
+  letter-spacing: -3px;
+  line-height: 0px;
+  color: #8a8683;
+  font-weight: 700; }
+
+#slide1 h2 {
+  font-size: 2em;
+  color: #8a8683;
+  line-height: 0px;
+  padding-bottom: 20px;
+  font-weight: 400; }
 
 #slide2 {
   background: url(../img/glassesheart-708.jpg) no-repeat center center;
@@ -817,7 +811,12 @@ a:visited {
   box-shadow: black 0 1px 0;
   text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
   color: white !important;
-  float: right; }
+  float: right;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    .button {
+      float: left;
+      margin-top: 60px; } }
 
 .button:hover, .button:active {
   background: #ed1e2f; }

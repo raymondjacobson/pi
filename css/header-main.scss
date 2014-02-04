@@ -10,6 +10,9 @@
 
 }
 
-.header-main img{
-   float: left
-}
+.body-logo {
+	text-align: center;
+	@include breakpoint(teen-up) {
+   	display: none;
+   }
+  }

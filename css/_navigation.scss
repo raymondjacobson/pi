@@ -1,0 +1,64 @@
+/* Navigation */
+
+.menu {
+	position:fixed;
+	top:0px;
+	width:100%; 
+	height:auto; 
+	background-color:#ffffff;
+	z-index:100;
+}
+.header-main-wrapper{
+	text-align: center;
+	margin: 10px 0;
+}
+#nav {
+	font-size: .8em;
+	width:100%;
+	margin:5px 0;
+	text-align: center;
+}
+.navigation{
+	list-style: none;
+	width: 70%;
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding:0;
+	@include breakpoint (teen-up) {
+		float: right;
+		width: auto;
+	}
+}
+.navigation li{
+	float: left;
+	width: auto;
+	padding: 6px 10px 0 0 ;
+	@include breakpoint (teen-up) {
+		float: right;
+	}
+	
+
+}
+.navigation li:hover{
+	cursor:pointer;
+	color: $color1;
+}
+
+.navigation .active{
+	cursor:pointer;
+	color: $color5;
+}
+
+
+
+
+
+.nav-logo {
+	height: 100px;
+	float: left;
+	@include breakpoint(baby) {
+		display: none;
+	}
+}
+
