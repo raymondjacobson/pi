@@ -47,7 +47,7 @@
 
 
 /* Mobile */
-@media screen and (max-width : 480px) {
+@include breakpoint(baby) {
 
 .grid_1,
 .grid_2,

@@ -506,7 +506,8 @@ table {
   zoom: 1; }
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+/* Smartphones, except large phone landscape ----------- */
+@media only screen and (max-width: 707px) {
   .grid_1,
   .grid_2,
   .grid_3,
@@ -568,7 +569,8 @@ a:visited {
 
 .navigation li {
   float: left;
-  padding: 0 0 0 50px; }
+  padding: 0 0 0 50px;
+  width: auto; }
 
 .navigation li:hover {
   cursor: pointer;
@@ -608,25 +610,6 @@ a:visited {
   font-weight: 400; }
 
 /* Slide 2 */
-#slide2 {
-  background: url(../img/glassesheart-708.jpg) no-repeat center center;
-  color: #ed1e2f !important;
-  padding-top: 50px;
-  /*screen*/ }
-  @media only screen and (min-width: 1021px) {
-    #slide2 {
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover; } }
-
-#slide2 h2 {
-  font-size: 2em;
-  color: black;
-  line-height: 0px;
-  font-weight: 700;
-  text-shadow: 1px 1px 10px white; }
-
 /* Slide 3 */
 #slide3 {
   background-color: #ffffff; }
@@ -673,7 +656,8 @@ a:visited {
   font-weight: 400; }
 
 /* Tablet */
-@media screen and (max-width: 1024px) {
+/*tablet*/
+@media only screen and (min-width: 708px) and (max-width: 1020px) and (orientation: portrait) {
   .header-main-wrapper {
     width: 100%;
     text-align: center; }
@@ -692,6 +676,7 @@ a:visited {
 
   .navigation li {
     float: left;
+    background: red;
     padding: 0; }
 
   .slide {
@@ -731,17 +716,19 @@ a:visited {
   #slide4 h2 {
     line-height: 1em; } }
 /* Mobile */
-@media screen and (max-width: 480px) {
+/* Smartphones, except large phone landscape ----------- */
+@media only screen and (max-width: 707px) {
   .header-main-wrapper {
     width: 100%;
     text-align: center; }
 
   #nav {
     width: 100%;
-    margin: 5px 0; }
+    margin: 5px 0;
+    text-align: center; }
 
   .navigation {
-    width: auto;
+    width: 70%;
     float: left;
     list-style: none;
     margin: 0;
@@ -749,24 +736,24 @@ a:visited {
 
   .navigation li {
     float: left;
+    width: auto;
     padding: 6px 10px 0 0; }
 
   .slide {
     background-attachment: fixed;
     width: 100%;
     position: relative;
-    padding: 150px 0; }
+    padding: 0;
+    margin-bottom: 10px; }
+
+  #slide2 {
+    height: 300px;
+    padding-top: 10%; }
 
   #slide1 h1 {
     line-height: 1em; }
 
   #slide1 h2 {
-    line-height: 1em; }
-
-  #slide2 h1 {
-    line-height: 1em; }
-
-  #slide2 h2 {
     line-height: 1em; }
 
   #slide3 h1 {
@@ -791,6 +778,35 @@ a:visited {
 .header-main img {
   float: left; }
 
+#slide2 {
+  background: url(../img/glassesheart-708.jpg) no-repeat center center;
+  color: #ed1e2f !important;
+  padding-top: 50px;
+  text-shadow: 1px 1px 10px white;
+  /*screen*/ }
+  @media only screen and (min-width: 1021px) {
+    #slide2 {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+#slide2 h2 {
+  font-size: 2em;
+  color: black;
+  text-align: left; }
+
+/* Smartphones, except large phone landscape ----------- */
+@media only screen and (max-width: 707px) {
+  #slide2 h1 {
+    text-align: left;
+    line-height: 1em;
+    font-size: 3em;
+    margin: 0;
+    padding: 0; }
+
+  #slide2 h2 {
+    line-height: 1em; } }
 .button {
   border-top: 1px solid #ed1e2f;
   background: #4f853c;
@@ -874,7 +890,7 @@ p {
   font-weight: 300;
   max-width: 40em;
   text-align: justify;
-  font-size: 1em;
+  font-size: 1.1em;
   /*
   @include breakpoint(big-baby-sleep) { 
   	font-size: .7em;

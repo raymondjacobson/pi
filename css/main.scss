@@ -52,7 +52,7 @@ a:visited {
 .navigation li{
 	float: left;
 	padding:0 0 0 50px;
-
+	width: auto;
 
 }
 .navigation li:hover{
@@ -108,30 +108,7 @@ a:visited {
 
 /* Slide 2 */ 
 
-#slide2{
-	
-	background: url(../img/glassesheart-708.jpg) no-repeat center center ; 
-	color:$color1!important;
-	padding-top: 50px;
 
-	@include breakpoint(adult) {
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
- 	}
-}
-
-#slide2 h2 {
-
-	font-size: 2em;
-	color: black;
-	line-height: 0px;
-	
-	font-weight: 700;
-	text-shadow: 1px 1px 10px white;
-
-}
 
 
 
@@ -193,7 +170,7 @@ a:visited {
 
 
 /* Tablet */
-@media screen and (max-width: 1024px) {
+@include breakpoint (teen) {
 
 .header-main-wrapper {
 	width: 100%;
@@ -212,10 +189,12 @@ a:visited {
 	list-style: none;
 	margin: 0;
 	padding:0;
+
 }
 
 .navigation li{
 	float: left;
+	background: red;
 	
 	padding:0;
 }
@@ -267,7 +246,7 @@ a:visited {
 
 
 /* Mobile */
-@media screen and (max-width: 480px) {
+@include breakpoint(baby){
 
 .header-main-wrapper {
 	width: 100%;
@@ -277,19 +256,21 @@ a:visited {
 #nav {
 	width:100%;
 	margin:5px 0;
+	text-align: center;
 }
 
 .navigation{
-	width: auto;
+	width: 70%;
 	float: left;
 	list-style: none;
 	margin: 0;
 	padding:0;
+
 }
 
 .navigation li{
 	float: left;
-	
+	width: auto;
 	padding: 6px 10px 0 0 ;
 
 }
@@ -298,22 +279,24 @@ a:visited {
 	background-attachment: fixed;
 	width:100%;
 	position: relative;
-	padding:150px 0;
+	padding:0;
+	margin-bottom: 10px;
 }
 
+#slide2 {
+	height: 300px;
+	padding-top: 10%;
+}
 
 #slide1 h1 {
 	line-height: 1em;
 }
 #slide1 h2 {
 	line-height: 1em;
+
+
 }
-#slide2 h1 {
-	line-height: 1em;
-}
-#slide2 h2 {
-	line-height: 1em;
-}
+
 #slide3 h1 {
 	line-height: 1em;
 }

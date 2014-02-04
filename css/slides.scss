@@ -1,0 +1,37 @@
+#slide2{
+	
+	background: url(../img/glassesheart-708.jpg) no-repeat center center ; 
+	color:$color1!important;
+	padding-top: 50px;
+	text-shadow: 1px 1px 10px white;
+	@include breakpoint(adult) {
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+ 	}
+}
+
+#slide2 h2 {
+	font-size: 2em;
+	color: black;
+	
+	text-align: left;
+
+}
+
+@include breakpoint(baby) {
+	#slide2 h1 {
+		text-align: left;
+		line-height: 1em;
+		font-size: 3em;
+		margin: 0;
+		padding: 0;
+	}
+	#slide2 h2 {
+		line-height: 1em;
+		
+	}
+}
+
+
