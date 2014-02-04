@@ -611,21 +611,15 @@ a:visited {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #ed1e2f !important; }
-
-#slide2 h1 {
-  font-size: 3.8em;
-  letter-spacing: -3px;
-  line-height: 0px;
-  color: red;
-  font-weight: 700; }
+  color: #ed1e2f !important;
+  padding-top: 75px; }
 
 #slide2 h2 {
   font-size: 2em;
-  color: #ffffff;
+  color: black;
   line-height: 0px;
-  padding-bottom: 20px;
-  font-weight: 400; }
+  font-weight: 700;
+  text-shadow: 1px 1px 10px white; }
 
 /* Slide 3 */
 #slide3 {
