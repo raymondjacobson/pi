@@ -4,4 +4,19 @@ $color1: #ed1e2f;
 $color2: #86271a; 
 $color3: #4f853c;
 $color4: #6cbd44;
-$color5: #d31f26
+$color5: #d31f26;
+
+$textmain: black;
+$lighttext: lighten($textmain,30%);
+
+
+/* Main-Sidebar Ratio */
+	$ratio: 31%;
+	$smallratio: 25%;
+	$margin: .9em;
+	$pagemargin: 3%;
+	$margin2: .9rem;
+	@if $ie8 {
+    $margin2: 15px;
+  }
+	$margin3: $margin * 2;

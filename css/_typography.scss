@@ -1,0 +1,41 @@
+/* Typography */
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+/**
+ * Address font sizes and margins set differently in IE 6/7.
+ * Address font sizes within `section` and `article` in Firefox 4+, Safari 5,
+ * and Chrome.
+ */
+
+body {
+	color: $textmain; 
+	font-family: "franklin-gothic-urw", verdana, sans-serif;
+}
+
+
+@import "typography-h";
+@import "typography-p";
+@import "typography-semantic-misc";
+@import "typography-figure-aside";
+@import "typography-header";
+
+
+
+/*.summary {
+	font-style:italic;
+	font-weight: bold;
+	font-size: .9em}*/
+
+.content {
+	@include breakpoint(adult) {
+		font-size: 1.3em;
+	}
+}
+
+@import "typography-quote";
+
+/* End of Typography */
