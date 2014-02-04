@@ -1,7 +1,8 @@
 jQuery(document).ready(function ($) {
 
-
-    $(window).stellar();
+    //if (!Modernizr.touch) {   
+    //    $(window).stellar();
+    //} 
 
     var links = $('.navigation').find('li');
     slide = $('.slide');
