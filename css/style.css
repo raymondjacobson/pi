@@ -416,6 +416,7 @@ table {
   border-spacing: 0; }
 
 /* Authored Dependencies */
+/*if ie8, combine teen-up and adult breakpoints */
 /*structure*/
 /* Computer */
 .grid_1 {
@@ -607,12 +608,15 @@ a:visited {
   background-color: red;
   background: url("../img/glassesheart-708.jpg") no-repeat;
   min-height: 500px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
   color: #ed1e2f !important;
-  padding-top: 75px; }
+  padding-top: 75px;
+  /*screen*/ }
+  @media only screen and (min-width: 1021px) {
+    #slide2 {
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
 
 #slide2 h2 {
   font-size: 2em;

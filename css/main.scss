@@ -111,15 +111,15 @@ a:visited {
 		url('../img/glassesheart-708.jpg') no-repeat
 	;
 	min-height: 500px;
-	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+	
 	color:$color1!important;
 	padding-top: 75px;
-	
-	
-
+	@include breakpoint(adult) {
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+ 	}
 }
 
 #slide2 h2 {
