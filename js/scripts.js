@@ -1,9 +1,23 @@
-jQuery(document).ready(function ($) {
+//jQuery(document).ready(function ($) {
 
-    //if (!Modernizr.touch) {   
-    //    $(window).stellar();
-    //} 
+   // if (!Modernizr.touch) { //if not touch
+        // Detecting IE
+   // var oldIE;
+   // if ($('html').is('.lt-ie9')) {
+    //    oldIE = true;
+   // }
+//
+  //  if (oldIE) {
+    //    $(document.body).addClass('test');
+   // } else {
+   //     $(window).stellar();
+   //     $(document.body).addClass('parallax');
+   // }
 
+
+           
+       
+   // }
     var links = $('.navigation').find('li');
     slide = $('.slide');
     button = $('.button');

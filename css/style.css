@@ -523,7 +523,6 @@ table {
     width: 100%; } }
 /* Global */
 body {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 1em;
   color: #8a8683;
@@ -545,13 +544,6 @@ a:visited {
   text-decoration: none; }
 
 /* General Slides */
-.slide {
-  background-attachment: fixed;
-  width: 100%;
-  height: auto;
-  position: relative;
-  padding: 140px 0; }
-
 /* Slide 1 */
 /* Slide 2 */
 /* Slide 3 */
@@ -605,12 +597,6 @@ a:visited {
   .header-main-wrapper {
     width: 100%;
     text-align: center; }
-
-  .slide {
-    background-attachment: fixed;
-    width: 100%;
-    position: relative;
-    padding: 150px 0; }
 
   #decorative {
     display: none; }
@@ -749,6 +735,13 @@ a:visited {
     .body-logo {
       display: none; } }
 
+.slide {
+  background-attachment: fixed;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 140px 0; }
+
 #slide1 {
   background-color: #ffffff;
   padding-bottom: 0;
@@ -773,34 +766,49 @@ a:visited {
   font-weight: 400; }
 
 #slide2 {
-  background: url(../img/glassesheart-708.jpg) no-repeat center center;
+  background: url(../img/glassesheart-708.jpg) no-repeat;
   color: #ed1e2f !important;
-  padding-top: 50px;
+  padding-top: 0px;
   text-shadow: 1px 1px 10px white;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    #slide2 {
+      background: url(../img/glassesheart-708v2.jpg) no-repeat; } }
+
+.parallax #slide2 {
+  background: url(../img/glassesheart-1020.jpg) top right no-repeat;
+  min-height: 500px; }
+
+#slide2 h1 {
+  text-align: left;
+  line-height: 1em;
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+  margin-top: 5%; }
+
+.parallax #slide2 h1 {
+  margin-top: 10%; }
+
+#slide2 h2 {
+  line-height: 1em;
+  font-size: 2em;
+  color: black;
+  text-align: left;
+  margin-bottom: 0; }
+
+#slide4 {
+  background: url("../img/glassesheart.jpg") no-repeat;
+  background-color: #8a8683;
+  color: #ffffff;
   /*screen*/ }
   @media only screen and (min-width: 1021px) {
-    #slide2 {
+    #slide4 {
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover; } }
 
-#slide2 h2 {
-  font-size: 2em;
-  color: black;
-  text-align: left; }
-
-/* Smartphones, except large phone landscape ----------- */
-@media only screen and (max-width: 707px) {
-  #slide2 h1 {
-    text-align: left;
-    line-height: 1em;
-    font-size: 3em;
-    margin: 0;
-    padding: 0; }
-
-  #slide2 h2 {
-    line-height: 1em; } }
 .button {
   border-top: 1px solid #ed1e2f;
   background: #4f853c;

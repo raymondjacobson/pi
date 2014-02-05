@@ -1,3 +1,12 @@
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:auto;
+	position: relative;
+	padding:140px 0;
+}
+
+
 #slide1{
 	background-color:#ffffff;
 	padding-bottom: 0;
@@ -24,39 +33,67 @@
 
 
 #slide2{
-	
-	background: url(../img/glassesheart-708.jpg) no-repeat center center ; 
+	background: url(../img/glassesheart-708.jpg) no-repeat ; 
 	color:$color1!important;
-	padding-top: 50px;
+	padding-top: 0px;
 	text-shadow: 1px 1px 10px white;
-	@include breakpoint(adult) {
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+	@include breakpoint(teen-up) {
+		background: url(../img/glassesheart-708v2.jpg) no-repeat; 
+  	
+  	
  	}
 }
 
-#slide2 h2 {
-	font-size: 2em;
-	color: black;
-	
-	text-align: left;
+
+.parallax #slide2 {
+	background: url(../img/glassesheart-1020.jpg) top right no-repeat;
+  min-height: 500px;
+  
+  
+  
+  
+  
 
 }
 
-@include breakpoint(baby) {
+
+
 	#slide2 h1 {
 		text-align: left;
 		line-height: 1em;
 		font-size: 3em;
 		margin: 0;
 		padding: 0;
+		margin-top: 5%;
 	}
+	
+.parallax #slide2 h1 {
+	margin-top: 10%;
+}
+
+
 	#slide2 h2 {
 		line-height: 1em;
-		
+		font-size: 2em;
+		color: black;
+		text-align: left;
+		margin-bottom: 0;
+
 	}
+
+
+
+
+#slide4{
+	background:url('../img/glassesheart.jpg') no-repeat;
+	background-color:#8a8683;
+	color:#ffffff;
+	@include breakpoint(adult) {
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+ 	}
 }
 
 
