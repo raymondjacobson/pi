@@ -773,11 +773,12 @@ a:visited {
   /*tablet and up*/ }
   @media only screen and (min-width: 708px) {
     #slide2 {
-      background: url(../img/glassesheart-708v2.jpg) no-repeat; } }
-
-.parallax #slide2 {
-  background: url(../img/glassesheart-1020.jpg) top right no-repeat;
-  min-height: 500px; }
+      background: url(../img/glassesheart-1020.jpg) center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 250px; } }
 
 #slide2 h1 {
   text-align: left;
@@ -788,7 +789,7 @@ a:visited {
   margin-top: 5%; }
 
 .parallax #slide2 h1 {
-  margin-top: 10%; }
+  margin-top: 30%; }
 
 #slide2 h2 {
   line-height: 1em;

@@ -38,23 +38,19 @@
 	padding-top: 0px;
 	text-shadow: 1px 1px 10px white;
 	@include breakpoint(teen-up) {
-		background: url(../img/glassesheart-708v2.jpg) no-repeat; 
-  	
+		background: url(../img/glassesheart-1020.jpg) center center no-repeat; 
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	min-height: 250px;
   	
  	}
 }
 
 
-.parallax #slide2 {
-	background: url(../img/glassesheart-1020.jpg) top right no-repeat;
-  min-height: 500px;
-  
-  
-  
-  
-  
 
-}
+ 
 
 
 
@@ -68,7 +64,7 @@
 	}
 	
 .parallax #slide2 h1 {
-	margin-top: 10%;
+	margin-top: 30%;
 }
 
 

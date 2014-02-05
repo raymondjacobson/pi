@@ -1,4 +1,4 @@
-//jQuery(document).ready(function ($) {
+jQuery(document).ready(function ($) {
 
    // if (!Modernizr.touch) { //if not touch
         // Detecting IE
