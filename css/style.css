@@ -840,29 +840,19 @@ a:visited {
   background: #333333;
   color: white;
   text-shadow: none;
-  /*clearflix could combine 
-  ul:after {
-  	display: table;
-  	content: "";
-  }*/
+  text-align: center;
+  padding-bottom: 1em;
   /*this graphic has a white background */ }
   #slide4 h2, #slide4 h3 {
     color: white;
     text-align: center; }
   #slide4 ul {
     list-style-type: none;
-    /*could probably combine with menu rule */
-    width: 100%;
-    margin: 0;
+    display: inline-block;
     padding: 0;
-    text-align: center;
-    clear: left; }
+    margin: 0; }
   #slide4 li {
-    display: inline;
-    width: 50%; }
-  #slide4 a {
-    color: white;
-    cursor: pointer; }
+    display: inline; }
   #slide4 .addthis_counter a {
     color: black; }
 

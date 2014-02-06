@@ -125,33 +125,26 @@
 	background: $color6;
 	color: white;
 	text-shadow: none;
+	text-align: center;
+	padding-bottom: 1em;
 
 	h2, h3 {
 		color: white;
 		text-align: center;
 	}
+
 	ul {
-		list-style-type: none; /*could probably combine with menu rule */
-		width: 100%;
-		margin: 0;
+		list-style-type: none;
+		display: inline-block;
 		padding: 0;
-		text-align: center;
-		clear: left;
+		margin: 0;
 	}
-	/*clearflix could combine 
-	ul:after {
-		display: table;
-		content: "";
-	}*/
+	
 	
 	li {
 		display: inline;
-		width: 50%;
 	}
- 	a {
-		color: white;
-		cursor: pointer;
-}
+ 	
 	/*this graphic has a white background */
 	.addthis_counter a {
 		color: black;
