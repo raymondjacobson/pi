@@ -1,10 +1,7 @@
-.slide{
-	
+.slide{	
 	width:100%;
 	height:auto;
-	margin-bottom: 1em;
 }
-
 
 .bgslide{
 	color:$color1!important;
@@ -24,15 +21,76 @@
 	margin-bottom: 0;
 	}
 
-#slide2 {
-	background: url(../img/glassesheart-708.jpg) center center no-repeat;
-		@include breakpoint(teen-up) {
-		background: url(../img/glassesheart-1020.jpg) center center no-repeat; 
+
+#slide1:before {
+	@include breakpoint (teen-up) { 
+	  background: url(../img/glassesheart-708.jpg) center center no-repeat; 
 		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-		} 
+	  	-moz-background-size: cover;
+	  	-o-background-size: cover;
+	  	background-size: cover;
+		
+	  min-height: 600px;
+	  opacity: 1;
+	  width: 100%;
+	  max-width: 1020px;
+	  top: 115px;
+	  position: fixed;
+	  z-index: -1;
+	  content: "";
+	}
+	@include breakpoint (adult) {
+		background: url(../img/glassesheart-1020.jpg) top right no-repeat;
+		@include background-size( 100% );
+	  min-height: 800px;  
+	}
+}
+
+
+#slide1{
+	padding-bottom: 0;
+	padding-top: 40px;
+	text-shadow: none;
+	@include breakpoint(teen-up) {
+		padding-top: 140px;
+		background-color:rgba(255, 255, 255, 0.4);
+	}
+	@include breakpoint(adult) {
+		min-height: 600px;
+	}
+	
+}
+
+.slide1big {
+	@include breakpoint(baby) {
+		display: none;
+
+	}
+}
+#slide1 h1 {
+	font-weight: 700; 
+	@include breakpoint(teen-up){
+		color: $color1;
+		text-align: left;
+	}
+}
+#slide1 h2 {
+	@include breakpoint(teen-up){
+		font-size: 1.2em;
+	}
+}
+
+#slide1 p {
+	color: black;
+	@include breakpoint(teen-up){
+		padding-top: 45%;
+		text-align: right;
+
+	}
+}
+
+
+#slide2 h2 {
 }
 
 #slide3 {
@@ -43,6 +101,7 @@
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover; 
+  	margin-top: 2em;
 		} 
 }
 
@@ -50,46 +109,53 @@
 	padding-top: 35%; 
 }
 
-#slide1{
-	background-color:#ffffff;
-	padding-bottom: 0;
-	padding-top: 40px;
-	@include breakpoint(teen-up) {
-		padding-top: 120px;
+#slide4 {
+	background: $color6;
+	color: white;
+	text-shadow: none;
+
+	h2, h3 {
+		color: white;
+		text-align: center;
 	}
+	ul {
+		list-style-type: none; /*could probably combine with menu rule */
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+		clear: left;
+	}
+	/*clearflix could combine 
+	ul:after {
+		display: table;
+		content: "";
+	}*/
+	
+	li {
+		display: inline;
+		width: 50%;
+	}
+ 	a {
+		color: white;
+		cursor: pointer;
 }
-#slide1 h1 {
-	font-size: 3.8em;
-	letter-spacing: -3px;
-	line-height: 0px;
-	color:#8a8683;
-	font-weight: 700;
-}
-#slide1 h2 {
-	font-size: 2em;
-	color: #8a8683;
-	line-height: 0px;
-	padding-bottom:20px;
-	font-weight: 400;
+	/*this graphic has a white background */
+	.addthis_counter a {
+		color: black;
+	}
+
+	
 }
 
 
-
-
-
-
-
-
-#slide4{
-	background:url('../img/glassesheart.jpg') no-repeat;
-	background-color:#8a8683;
-	color:#ffffff;
-	@include breakpoint(adult) {
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
- 	}
+#slide5 {
+	background: #ffd452;
+	color: #333;
+	text-align: center;
+	padding: 2em 0 1em;
+	margin-bottom: 0;
+	
 }
 
 

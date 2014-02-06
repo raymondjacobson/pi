@@ -1,11 +1,14 @@
 /* Global */
 
 body {
-	
+	max-width: 1020px;
 	font-weight: 400;
 	font-size: 1em;
 	color: #8a8683;
-	background-color:#ffffff;
+	margin: 0 auto;
+	@include breakpoint(teen-up){
+		background-color:$color10;
+	}
 }
 img {
 	max-width: 100%;
@@ -85,13 +88,7 @@ a:visited {
 	color:#ffffff;
 	font-weight: 700;
 }
-#slide4 h2 {
-	font-size: 2em;
-	color: #ffffff;
-	line-height: 0px;
-	padding-bottom:20px;
-	font-weight: 400;
-}
+
 
 
 
