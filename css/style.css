@@ -536,16 +536,12 @@ body {
 img {
   max-width: 100%; }
 
-a:link {
-  color: #f68f67;
+a:link, a:visited {
+  color: #d9411e;
   text-decoration: none; }
 
 a:hover {
-  color: #bde2df;
-  text-decoration: none; }
-
-a:visited {
-  color: #f68f67;
+  color: #75a3d1;
   text-decoration: none; }
 
 /* General Slides */
@@ -864,6 +860,12 @@ a:visited {
   text-align: center;
   padding: 2em 0 1em;
   margin-bottom: 0; }
+
+#slide6 {
+  background: white;
+  text-align: center; }
+  #slide6 p {
+    text-align: center; }
 
 .button {
   border-top: 1px solid #ed1e2f;
