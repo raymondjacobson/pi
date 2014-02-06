@@ -4,6 +4,7 @@
 	height:auto;
 	position: relative;
 	padding:140px 0;
+	margin-bottom: 1em;
 }
 
 
@@ -37,7 +38,6 @@
 	color:$color1!important;
 	padding-top: 0px;
 	text-shadow: 1px 1px 10px white;
-	margin-bottom: 0;
 	@include breakpoint(teen-up) {
 		background: url(../img/glassesheart-1020.jpg) center center no-repeat; 
   	-webkit-background-size: cover;

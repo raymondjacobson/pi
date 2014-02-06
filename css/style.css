@@ -740,7 +740,8 @@ a:visited {
   width: 100%;
   height: auto;
   position: relative;
-  padding: 140px 0; }
+  padding: 140px 0;
+  margin-bottom: 1em; }
 
 #slide1 {
   background-color: #ffffff;
@@ -770,7 +771,6 @@ a:visited {
   color: #ed1e2f !important;
   padding-top: 0px;
   text-shadow: 1px 1px 10px white;
-  margin-bottom: 0;
   /*tablet and up*/
   /*screen*/ }
   @media only screen and (min-width: 708px) {
