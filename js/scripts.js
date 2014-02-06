@@ -46,8 +46,10 @@ jQuery(document).ready(function ($) {
     });
 
     function goToByScroll(dataslide) {
+        //get height of menu. it is fixed at top so the sections should be be below the menu, which is different heights, responsively
+       var menuheight = $( ".menu" ).height();
         htmlbody.animate({
-            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top
+            scrollTop: $('.slide[data-slide="' + dataslide + '"]').offset().top - menuheight,
         }, 2000, 'easeInOutQuint');
     }
 

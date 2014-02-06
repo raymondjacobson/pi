@@ -872,6 +872,8 @@ a:hover {
     text-align: center;
     width: 100%;
     max-width: 100%; }
+  #slide6 img {
+    width: 100%; }
 
 .button {
   border-top: 1px solid #ed1e2f;
