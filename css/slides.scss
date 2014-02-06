@@ -1,12 +1,54 @@
 .slide{
-	background-attachment: fixed;
+	
 	width:100%;
 	height:auto;
-	position: relative;
-	padding:140px 0;
 	margin-bottom: 1em;
 }
 
+
+.bgslide{
+	color:$color1!important;
+	min-height: 300px;
+	padding-top: 5%;
+	text-shadow: 2px 1px 6px white, 0px 0px 20px white;
+ 	@include breakpoint(adult) {
+		min-height: 500px;
+	}
+}
+
+.bgslide h2 {
+	line-height: 1em;
+	font-size: 2em;
+	color: black;
+	text-align: left;
+	margin-bottom: 0;
+	}
+
+#slide2 {
+	background: url(../img/glassesheart-708.jpg) center center no-repeat;
+		@include breakpoint(teen-up) {
+		background: url(../img/glassesheart-1020.jpg) center center no-repeat; 
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+		} 
+}
+
+#slide3 {
+	background: url(../img/hockey-708.jpg) center center no-repeat;
+	@include breakpoint(teen-up) {
+		background: url(../img/hockey-1020.jpg) center center no-repeat;
+		-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover; 
+		} 
+}
+
+#slide3 h2 {
+	padding-top: 35%; 
+}
 
 #slide1{
 	background-color:#ffffff;
@@ -33,35 +75,7 @@
 
 
 
-#slide2{
-	background: url(../img/glassesheart-708.jpg) no-repeat ; 
-	color:$color1!important;
-	padding-top: 0px;
-	text-shadow: 1px 1px 10px white;
-	@include breakpoint(teen-up) {
-		background: url(../img/glassesheart-1020.jpg) center center no-repeat; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-  	min-height: 250px;
- 	}
- 	@include breakpoint(adult) {
-		min-height: 500px;
-	}
-}
 
-
-
-	#slide2 h2 {
-		margin-top: 5%;
-		line-height: 1em;
-		font-size: 2em;
-		color: black;
-		text-align: left;
-		margin-bottom: 0;
-
-	}
 
 
 

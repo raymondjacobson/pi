@@ -557,13 +557,6 @@ a:visited {
   color: #8a8683;
   font-weight: 700; }
 
-#slide3 h2 {
-  font-size: 2em;
-  color: #8a8683;
-  line-height: 0px;
-  padding-bottom: 20px;
-  font-weight: 400; }
-
 #test {
   background-color: #bde2df;
   color: #ffffff;
@@ -641,10 +634,6 @@ a:visited {
     position: relative;
     padding: 0;
     margin-bottom: 10px; }
-
-  #slide2 {
-    height: 300px;
-    padding-top: 10%; }
 
   #slide1 h1 {
     line-height: 1em; }
@@ -736,12 +725,51 @@ a:visited {
       display: none; } }
 
 .slide {
-  background-attachment: fixed;
   width: 100%;
   height: auto;
-  position: relative;
-  padding: 140px 0;
   margin-bottom: 1em; }
+
+.bgslide {
+  color: #ed1e2f !important;
+  min-height: 300px;
+  padding-top: 5%;
+  text-shadow: 2px 1px 6px white, 0px 0px 20px white;
+  /*screen*/ }
+  @media only screen and (min-width: 1021px) {
+    .bgslide {
+      min-height: 500px; } }
+
+.bgslide h2 {
+  line-height: 1em;
+  font-size: 2em;
+  color: black;
+  text-align: left;
+  margin-bottom: 0; }
+
+#slide2 {
+  background: url(../img/glassesheart-708.jpg) center center no-repeat;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    #slide2 {
+      background: url(../img/glassesheart-1020.jpg) center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+#slide3 {
+  background: url(../img/hockey-708.jpg) center center no-repeat;
+  /*tablet and up*/ }
+  @media only screen and (min-width: 708px) {
+    #slide3 {
+      background: url(../img/hockey-1020.jpg) center center no-repeat;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover; } }
+
+#slide3 h2 {
+  padding-top: 35%; }
 
 #slide1 {
   background-color: #ffffff;
@@ -765,33 +793,6 @@ a:visited {
   line-height: 0px;
   padding-bottom: 20px;
   font-weight: 400; }
-
-#slide2 {
-  background: url(../img/glassesheart-708.jpg) no-repeat;
-  color: #ed1e2f !important;
-  padding-top: 0px;
-  text-shadow: 1px 1px 10px white;
-  /*tablet and up*/
-  /*screen*/ }
-  @media only screen and (min-width: 708px) {
-    #slide2 {
-      background: url(../img/glassesheart-1020.jpg) center center no-repeat;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      min-height: 250px; } }
-  @media only screen and (min-width: 1021px) {
-    #slide2 {
-      min-height: 500px; } }
-
-#slide2 h2 {
-  margin-top: 5%;
-  line-height: 1em;
-  font-size: 2em;
-  color: black;
-  text-align: left;
-  margin-bottom: 0; }
 
 #slide4 {
   background: url("../img/glassesheart.jpg") no-repeat;
