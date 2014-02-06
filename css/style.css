@@ -531,7 +531,7 @@ body {
   /*tablet and up*/ }
   @media only screen and (min-width: 708px) {
     body {
-      background-color: #75a3d1; } }
+      background-color: #333333; } }
 
 img {
   max-width: 100%; }
@@ -651,12 +651,18 @@ a:visited {
   #slide4 h2 {
     line-height: 1em; } }
 /*customized*/
+.body-wrapper {
+  /*screen*/ }
+  @media only screen and (min-width: 1021px) {
+    .body-wrapper {
+      border: 1px solid #d9411e; } }
+
 /* Navigation */
 .menu {
   position: fixed;
   top: 0px;
   width: 100%;
-  max-width: 1020px;
+  max-width: 1018px;
   height: auto;
   background: white;
   z-index: 100;
@@ -731,11 +737,7 @@ a:visited {
 .bgslide {
   color: #ed1e2f !important;
   padding-top: 5%;
-  text-shadow: 2px 1px 6px white, 0px 0px 20px white;
-  /*screen*/ }
-  @media only screen and (min-width: 1021px) {
-    .bgslide {
-      min-height: 500px; } }
+  text-shadow: 2px 1px 6px white, 0px 0px 20px white; }
 
 .bgslide h2 {
   line-height: 1em;
@@ -757,7 +759,7 @@ a:visited {
       min-height: 600px;
       opacity: 1;
       width: 100%;
-      max-width: 1020px;
+      max-width: 1019px;
       top: 115px;
       position: fixed;
       z-index: -1;

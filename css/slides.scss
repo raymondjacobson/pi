@@ -5,12 +5,8 @@
 
 .bgslide{
 	color:$color1!important;
-	
 	padding-top: 5%;
 	text-shadow: 2px 1px 6px white, 0px 0px 20px white;
- 	@include breakpoint(adult) {
-		min-height: 500px;
-	}
 }
 
 .bgslide h2 {
@@ -33,7 +29,7 @@
 	  min-height: 600px;
 	  opacity: 1;
 	  width: 100%;
-	  max-width: 1020px;
+	  max-width: 1019px;
 	  top: 115px;
 	  position: fixed;
 	  z-index: -1;
