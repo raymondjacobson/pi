@@ -770,7 +770,9 @@ a:visited {
   color: #ed1e2f !important;
   padding-top: 0px;
   text-shadow: 1px 1px 10px white;
-  /*tablet and up*/ }
+  margin-bottom: 0;
+  /*tablet and up*/
+  /*screen*/ }
   @media only screen and (min-width: 708px) {
     #slide2 {
       background: url(../img/glassesheart-1020.jpg) center center no-repeat;
@@ -779,19 +781,12 @@ a:visited {
       -o-background-size: cover;
       background-size: cover;
       min-height: 250px; } }
-
-#slide2 h1 {
-  text-align: left;
-  line-height: 1em;
-  font-size: 3em;
-  margin: 0;
-  padding: 0;
-  margin-top: 5%; }
-
-.parallax #slide2 h1 {
-  margin-top: 30%; }
+  @media only screen and (min-width: 1021px) {
+    #slide2 {
+      min-height: 500px; } }
 
 #slide2 h2 {
+  margin-top: 5%;
   line-height: 1em;
   font-size: 2em;
   color: black;
