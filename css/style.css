@@ -730,7 +730,6 @@ a:visited {
 
 .bgslide {
   color: #ed1e2f !important;
-  min-height: 300px;
   padding-top: 5%;
   text-shadow: 2px 1px 6px white, 0px 0px 20px white;
   /*screen*/ }
@@ -794,14 +793,15 @@ a:visited {
   /*tablet and up*/ }
   @media only screen and (min-width: 708px) {
     #slide1 h1 {
-      color: #ed1e2f;
+      color: #86271a;
       text-align: left; } }
 
 #slide1 h2 {
   /*tablet and up*/ }
   @media only screen and (min-width: 708px) {
     #slide1 h2 {
-      font-size: 1.2em; } }
+      font-size: 1.2em;
+      color: black; } }
 
 #slide1 p {
   color: black;
@@ -810,6 +810,16 @@ a:visited {
     #slide1 p {
       padding-top: 45%;
       text-align: right; } }
+
+.video {
+  margin-bottom: 0;
+  background: #75a3d1; }
+
+#slide2, #slide2_5 {
+  margin-top: 0;
+  background: #75a3d1;
+  margin-bottom: 0;
+  text-shadow: none; }
 
 #slide3 {
   background: url(../img/hockey-708.jpg) center center no-repeat;
