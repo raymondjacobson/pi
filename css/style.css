@@ -863,9 +863,15 @@ a:hover {
 
 #slide6 {
   background: white;
-  text-align: center; }
+  text-align: center;
+  padding-top: 1em; }
+  #slide6 h2 {
+    text-align: center;
+    font-size: 1.5em; }
   #slide6 p {
-    text-align: center; }
+    text-align: center;
+    width: 100%;
+    max-width: 100%; }
 
 .button {
   border-top: 1px solid #ed1e2f;
