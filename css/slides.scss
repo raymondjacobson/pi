@@ -104,21 +104,6 @@
 #slide2 h2 {
 }
 
-#slide3 {
-	background: url(../img/hockey-708.jpg) center center no-repeat;
-	@include breakpoint(teen-up) {
-		background: url(../img/hockey-1020.jpg) center center no-repeat;
-		-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover; 
-  	margin-top: 2em;
-		} 
-}
-
-#slide3 h2 {
-	padding-top: 35%; 
-}
 
 #slide4 {
 	background: $color6;
