@@ -524,18 +524,12 @@ a:hover {
   color: #75a3d1;
   text-decoration: none; }
 
-/* General Slides */
-/* Slide 1 */
-/* Slide 2 */
 /* Tablet */
 /*tablet*/
 @media only screen and (min-width: 708px) and (max-width: 1020px) and (orientation: portrait) {
   .header-main-wrapper {
     width: 100%;
     text-align: center; }
-
-  #decorative {
-    display: none; }
 
   #content {
     text-align: center;
@@ -545,9 +539,6 @@ a:hover {
     line-height: 1em; }
 
   #slide1 h2 {
-    line-height: 1em; }
-
-  #slide2 h1 {
     line-height: 1em; }
 
   #slide2 h2 {
@@ -575,13 +566,7 @@ a:hover {
   #slide1 h2 {
     line-height: 1em; }
 
-  #slide3 h1 {
-    line-height: 1em; }
-
   #slide3 h2 {
-    line-height: 1em; }
-
-  #slide4 h1 {
     line-height: 1em; }
 
   #slide4 h2 {
@@ -805,8 +790,6 @@ a:hover {
     text-align: center;
     width: 100%;
     max-width: 100%; }
-  #slide6 img {
-    width: 100%; }
 
 #slide7 {
   padding-top: 1em;

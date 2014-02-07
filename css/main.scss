@@ -25,38 +25,6 @@ a:hover {
 
 
 
-
-
-/* General Slides */ 
-
-
-
-
-
-/* Slide 1 */ 
-
-
-
-
-
-
-/* Slide 2 */ 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Tablet */
 @include breakpoint (teen) {
 
@@ -80,9 +48,6 @@ a:hover {
 
 
 
-#decorative {
-	display:none;
-}
 
 #content {
 	text-align:center;
@@ -95,9 +60,7 @@ a:hover {
 #slide1 h2 {
 	line-height: 1em;
 }
-#slide2 h1 {
-	line-height: 1em;
-}
+
 #slide2 h2 {
 	line-height: 1em;
 }
@@ -140,15 +103,10 @@ a:hover {
 
 }
 
-#slide3 h1 {
-	line-height: 1em;
-}
 #slide3 h2 {
 	line-height: 1em;
 }
-#slide4 h1 {
-	line-height: 1em;
-}
+
 #slide4 h2 {
 	line-height: 1em;
 }
