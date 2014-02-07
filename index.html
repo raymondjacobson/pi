@@ -15,7 +15,6 @@
     <!--<![endif]-->
 	<script type="text/javascript" src="//use.typekit.net/yac3sjj.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 </head>
 <body>
 	<div class="body-wrapper">
@@ -27,8 +26,7 @@
 						<li data-slide="about">About</li>
 						<li data-slide="video">Video</li>
 						<li data-slide="share">Share</li>
-						<li data-slide="contact">Contact</li>
-						
+						<li data-slide="contact">Contact</li>		
 					</ul>
 				</div>
 			</div>
@@ -55,49 +53,6 @@
 					<div class="video slide"  data-slide="video">
 						<iframe width="1080" height="750" src="http://www.youtube.com/embed/MmpAXq7sq8s?rel=0&amp;hd=1&amp;wmode=transparent" frameborder="0" allowfullscreen></iframe>
 						<!-- include wmode=transparent for ie8 -->
-
-						<script>// By Chris Coyier & tweaked by Mathias Bynens
-
-						$(function() {
-
-							// Find all YouTube videos
-							var $allVideos = $("iframe[src^='http://www.youtube.com']"),
-
-							    // The element that is fluid width
-							    $fluidEl = $(".video");
-
-							// Figure out and save aspect ratio for each video
-							$allVideos.each(function() {
-
-								$(this)
-									.data('aspectRatio', this.height / this.width)
-									
-									// and remove the hard coded width/height
-									.removeAttr('height')
-									.removeAttr('width');
-
-							});
-
-							// When the window is resized
-							// (You'll probably want to debounce this)
-							$(window).resize(function() {
-
-								var newWidth = $fluidEl.width();
-								
-								// Resize all videos according to their own aspect ratio
-								$allVideos.each(function() {
-
-									var $el = $(this);
-									$el
-										.width(newWidth)
-										.height(newWidth * $el.data('aspectRatio'));
-
-								});
-
-							// Kick off one resize to fix all videos on page load
-							}).resize();
-
-					});</script>
 					</div> <!--end video-->
 					
 			
@@ -146,9 +101,6 @@
 		          <li><a class="addthis_counter addthis_bubble_style"></a></li>
 		        </ul>
 	  			</div>
-			    <!--add this script, move to footer -->
-			    <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
-			    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52de8ad020e6b26c"></script>  
 				</div><!--end share--> 
 				<div class="grid_6 omega">
 				<h3>Follow</h3>
@@ -161,8 +113,6 @@
 		          <li><a class="addthis_button_linkedin_follow" addthis:usertype="group" addthis:userid="35733"></a></li>
 		          <li><a class="addthis_button_youtube_follow" addthis:userid="RPIAlumni"></a></li>
 	      		</ul>
-	      		<!--add this script move to footer-->
-	      		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52de8ad020e6b26c"></script>
 	  			</div>
 				</div><!--end follow-->
 			</div><!--end grid 6-->
@@ -195,7 +145,12 @@
 	</div>
 	</div>
 	<!--end body wrapper-->
-		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/scripts-ck.js"></script>
+		<!--add this share -->
+ 		<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52de8ad020e6b26c"></script>  
+		<!--add this follow -->
+		<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52de8ad020e6b26c"></script>
 </body>
 </html>
