@@ -653,6 +653,9 @@ a:hover {
     .body-wrapper {
       border: 1px solid #d9411e; } }
 
+.container {
+  position: relative; }
+
 /* Navigation */
 .menu {
   position: fixed;

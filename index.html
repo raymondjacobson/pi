@@ -7,9 +7,12 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
 	<title>R&#960 Day</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
-	<!-- <link rel="stylesheet" href="css/style.min.css" type="text/css" media="screen"> -->
-	<!--[if IE]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<!--[if lte IE 8]>
+      <link rel="stylesheet" href="css/zstyle-ie8.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--<![endif]-->
 	<script type="text/javascript" src="//use.typekit.net/yac3sjj.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -51,7 +54,8 @@
 		
 				
 					<div class="video slide"  data-slide="video">
-						<iframe width="1080" height="750" src="http://www.youtube.com/embed/MmpAXq7sq8s?rel=0&amp;hd=1" frameborder="0" allowfullscreen></iframe>
+						<iframe width="1080" height="750" src="http://www.youtube.com/embed/MmpAXq7sq8s?rel=0&amp;hd=1&amp;wmode=transparent" frameborder="0" allowfullscreen></iframe>
+						<!-- include wmode=transparent for ie8 -->
 
 						<script>// By Chris Coyier & tweaked by Mathias Bynens
 
