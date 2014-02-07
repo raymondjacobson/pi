@@ -531,10 +531,6 @@ a:hover {
     width: 100%;
     text-align: center; }
 
-  #content {
-    text-align: center;
-    width: 100%; }
-
   #slide1 h1 {
     line-height: 1em; }
 
@@ -564,9 +560,6 @@ a:hover {
     line-height: 1em; }
 
   #slide1 h2 {
-    line-height: 1em; }
-
-  #slide3 h2 {
     line-height: 1em; }
 
   #slide4 h2 {
