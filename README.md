@@ -6,7 +6,7 @@ This website will not be officially launched until March 10, 2014.
 
 Feel free to recommend changes. In particular, I'm interested in additions to make the site run faster and to be more accessible. 
 
-Website: rpi.edu/pi
+Website: http://rpi.edu/pi
 Authored by:
 Michael Chameides, Donor Relations and Communications
 chamem@rpi.edu
